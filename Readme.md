@@ -1,7 +1,7 @@
 
 # Welcome
 
-###TL;DR 
+### TL;DR 
 Guids seem to be slightly better in SQLite,
 but not a considerable chunk as one run even was
 faster with guids than with ints.
