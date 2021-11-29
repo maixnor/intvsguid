@@ -14,7 +14,7 @@ faster with guids than with ints.
 
 ### Results
 
-Here are my results on 3 separate runs:
+Here are my results on 3 separate runs: (lower = better)
 
 ```
 BenchmarkDotNet=v0.13.1, OS=garuda
