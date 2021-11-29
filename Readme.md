@@ -1,15 +1,20 @@
 
 # Welcome
 
+###TL;DR 
+Guids seem to be slightly better in SQLite,
+but not a considerable chunk as one run even was
+faster with guids than with ints.
+
+### How to run 
+
 1. Run on release mode 
 2. Grab a coffee, it takes a bit
 3. scroll up a bit to see the results
 
-Here are my results on 3 separate runs:
+### Results
 
-TL;DR Guids seem to be slightly better in SQLite, 
-but not a considerable chunk as one run even was 
-faster with guids than with ints.
+Here are my results on 3 separate runs:
 
 BenchmarkDotNet=v0.13.1, OS=garuda
 Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical cores
