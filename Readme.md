@@ -16,11 +16,13 @@ faster with guids than with ints.
 
 Here are my results on 3 separate runs:
 
+```
 BenchmarkDotNet=v0.13.1, OS=garuda
 Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical cores
 .NET SDK=6.0.100
-[Host]     : .NET 6.0.0 (6.0.21.56401), X64 RyuJIT
-DefaultJob : .NET 6.0.0 (6.0.21.56401), X64 RyuJIT
+    [Host]     : .NET 6.0.0 (6.0.21.56401), X64 RyuJIT
+    DefaultJob : .NET 6.0.0 (6.0.21.56401), X64 RyuJIT
+```
 
 
 |       Method |     Mean |    Error |   StdDev |    Gen 0 |   Gen 1 | Allocated |
