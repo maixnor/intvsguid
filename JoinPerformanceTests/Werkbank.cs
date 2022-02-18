@@ -24,7 +24,7 @@ public class Werkbank
     }
 
     [Benchmark]
-    public void JoinAllGuids()
+    public void JoinGuids()
     {
         var people = _guids.People.Take(100).ToList();
         foreach (var person in people)
@@ -34,7 +34,7 @@ public class Werkbank
     }
 
     [Benchmark]
-    public void JoinAllInts()
+    public void JoinInts()
     {
         var people = _ints.People.Take(100).ToList();
         foreach (var person in people)
