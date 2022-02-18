@@ -31,6 +31,9 @@ and this marginal loss in performance cannot outweigh the benefits of using guid
 
 ### Results
 
+For more elaborate metrics run the tests yourself and have 
+a look the full statistics.
+
 Here are my results on 4 separate runs: (lower = better)
 
 ```
@@ -60,3 +63,18 @@ Intel Core i7-9700K CPU 3.60GHz (Coffee Lake), 1 CPU, 8 logical and 8 physical c
 |-----------|---------:|---------:|---------:|---------:|--------:|----------:|
 | JoinGuids | 658.4 us | 12.91 us | 12.68 us | 646.4844 | 73.2422 |      4 MB |
 | JoinInts  | 700.4 us | 15.41 us | 45.21 us | 689.4531 | 77.1484 |      4 MB |
+
+### Nuget upgrade
+
+By upgrading the EF Core version from 6.0.0 to 6.0.2 the runtimes went down 
+considerably
+
+|    Method |     Mean |    Error |   StdDev |    Gen 0 |   Gen 1 | Allocated |
+|---------- |---------:|---------:|---------:|---------:|--------:|----------:|
+| JoinGuids | 588.3 us | 11.65 us | 13.86 us | 606.4453 | 71.2891 |      4 MB |
+|  JoinInts | 539.8 us | 10.79 us | 14.40 us | 563.4766 | 63.4766 |      3 MB |
+
+|    Method |     Mean |    Error |   StdDev |    Gen 0 |   Gen 1 | Allocated |
+|---------- |---------:|---------:|---------:|---------:|--------:|----------:|
+| JoinGuids | 596.4 us | 11.90 us | 25.35 us | 591.7969 | 73.2422 |      4 MB |
+|  JoinInts | 607.0 us |  9.41 us |  8.80 us | 626.9531 | 67.3828 |      4 MB |
